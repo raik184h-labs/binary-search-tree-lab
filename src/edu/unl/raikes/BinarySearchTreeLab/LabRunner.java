@@ -30,23 +30,14 @@ public class LabRunner {
 		// add Connor to the tree
 		insertIntoBSTAndPrintResults(bst, new Person(666666666, "Connor"));
 
-		// add Connor to the tree
-		insertIntoBSTAndPrintResults(bst, new Person(666666666, "Dave"));
-
 		// find the person with NUID 111111111
 		searchInBSTAndPrintResults(bst, 111111111);
 
 		// find the person with NUID 555555555
 		searchInBSTAndPrintResults(bst, 555555555);
 
-		// find the person with NUID 555555555
-		searchInBSTAndPrintResults(bst, 10);
-
 		// delete the person with NUID 555555555
 		deleteFromBSTAndPrintResults(bst, 555555555);
-
-		// delete the person with NUID 10
-		deleteFromBSTAndPrintResults(bst, 10);
 
 		// delete the person with NUID 222222222
 		deleteFromBSTAndPrintResults(bst, 222222222);
