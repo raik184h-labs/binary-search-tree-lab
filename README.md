@@ -1,9 +1,26 @@
 ## Cursor Project Template
 
-### Installation Steps:
+### Updating an existing repository (that wasn't forked) that uses this template
 
-Either:
-Fork this repository on GitHub for a new repository, or for an existing repository:
+Use this as an all in one to quickly update a repository. You may have merge conflicts that need to be updated.
+Note: the `-X ours` flag tells git:
+
+- If there’s no conflict → merge normally.
+- If there’s a conflict → take my branch’s version (“ours”) instead of upstream’s.
+
+If you don't want that behavior, remove the `-X ours` flag.
+
+```
+git fetch upstream
+git merge upstream/main -X ours
+git push
+```
+
+### Installing this into a new repository
+
+1. Just fork it!
+
+### Installation this into an existing repository
 
 1. Open the repository locally
 2. Open in your terminal
@@ -30,14 +47,4 @@ git merge upstream/main
 
 ```
 git push --force
-```
-
-### Convenience
-
-Use this as an all in one to quickly update a repository. You may have merge conflicts that need to be updated.
-
-```
-git fetch upstream
-git merge upstream/main
-git push
 ```
