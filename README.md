@@ -37,5 +37,7 @@ git push --force
 Use this as an all in one to quickly update a repository. You may have merge conflicts that need to be updated.
 
 ```
-git fetch upstream; git merge upstream/main; git push --force
+git fetch upstream
+git merge upstream/main
+git push
 ```
