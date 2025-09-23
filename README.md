@@ -1,21 +1,5 @@
 ## Cursor Project Template
 
-### Updating an existing repository (that wasn't forked) that uses this template
-
-Use this as an all in one to quickly update a repository. You may have merge conflicts that need to be updated.
-Note: the `-X ours` flag tells git:
-
-- If there’s no conflict → merge normally.
-- If there’s a conflict → take my branch’s version (“ours”) instead of upstream’s.
-
-If you don't want that behavior, remove the `-X ours` flag.
-
-```
-git fetch upstream
-git merge upstream/main -X ours
-git push
-```
-
 ### Installing this into a new repository
 
 1. Just fork it!
@@ -47,4 +31,19 @@ git merge upstream/main
 
 ```
 git push --force
+```
+
+### Syncing an existing repository (that wasn't forked) that uses this template
+
+Use this as an all in one to quickly update a repository. **Note: the `-X ours` flag tells git:**
+
+- If there’s no conflict → merge normally.
+- If there’s a conflict → take my branch’s version (“ours”) instead of upstream’s.
+
+If you don't want that behavior, remove the `-X ours` flag. You may have merge conflicts that need to be updated if you remove the flag.
+
+```
+git fetch upstream
+git merge upstream/main -X ours
+git push
 ```
