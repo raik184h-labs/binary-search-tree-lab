@@ -24,7 +24,7 @@ git fetch upstream
 6. Run this command to merge the cursor project template to the current repository:
 
 ```
-git merge upstream/main
+git merge upstream/main --allow-unrelated-histories
 ```
 
 7. Run this command to push the changes. `--force` is required because trying to set an upstream branch that has no related history to the current repository is considered unnatural:
